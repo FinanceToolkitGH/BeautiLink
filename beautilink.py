@@ -8,11 +8,13 @@ from datetime import datetime
 # BEAUTILINK FOLDER
 # ==========================================
 
-BASE_DIR = Path(r"C:\Users\JAY\BeautiLink")
+BASE_DIR = Path(__file__).resolve().parent
 PIC_DIR = BASE_DIR / "images"
 VIDEO_DIR = BASE_DIR / "videos"
 DB = BASE_DIR / "bookings.db"
 
+PIC_DIR.mkdir(parents=True, exist_ok=True)
+VIDEO_DIR.mkdir(parents=True, exist_ok=True)
 PIC_DIR.mkdir(parents=True, exist_ok=True)
 VIDEO_DIR.mkdir(parents=True, exist_ok=True)
 
